@@ -11,15 +11,26 @@ div[role="alert"] {
     place-self: center;
     padding: 40px;
     border-radius: 10px;
-    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+    background: linear-gradient(
+        to top,
+        #2bc0e4,
+        #eaecc6
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.condition-message {
+    font-size: 1.2rem;
+    color: #ffffffdf;
+    margin-bottom: 1rem;
+}
+
 .search-bar {
     display: flex;
-    align-items:center;
+    align-items: center;
     gap: 12px;
 }
 
@@ -33,7 +44,6 @@ div[role="alert"] {
     background: #ebfffc;
     font-size: 18px;
 }
-
 
 .search-bar img {
     width: 50px;
